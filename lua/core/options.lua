@@ -11,7 +11,7 @@ opt.expandtab = false
 opt.autoindent = true
 
 -- no wrap
-opt.wrap = false
+opt.wrap = true
 
 -- cursorline
 opt.cursorline = true

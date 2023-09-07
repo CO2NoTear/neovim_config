@@ -23,5 +23,5 @@ require("bufferline").setup({
 	},
 })
 -- pick
-vim.keymap.set("n", "gb", ":BufferLinePick<CR>", { desc = "silent" })
-vim.keymap.set("n", "gD", ":BufferLinePickClose<CR>", { desc = "silent" })
+vim.keymap.set("n", "<leader>bb", ":BufferLinePick<CR>", { desc = "silent" })
+vim.keymap.set("n", "<leader>bq", ":BufferLinePickClose<CR>", { desc = "silent" })

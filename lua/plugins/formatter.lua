@@ -22,7 +22,6 @@ require("formatter").setup({
 				if util.get_current_buffer_file_name() == "special.lua" then
 					return nil
 				end
-
 				-- Full specification of configurations is down below and in Vim help
 				-- files
 				return {
@@ -37,6 +36,10 @@ require("formatter").setup({
 					stdin = true,
 				}
 			end,
+		},
+
+		python = {
+			require("formatter.filetypes.python").black,
 		},
 
 		-- Use the special "*" filetype for defining formatter configurations on
