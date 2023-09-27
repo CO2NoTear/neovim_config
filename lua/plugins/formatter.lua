@@ -42,6 +42,10 @@ require("formatter").setup({
 			require("formatter.filetypes.python").black,
 		},
 
+		cpp = {
+			require("formatter.filetypes.cpp").clangformat,
+		},
+
 		-- Use the special "*" filetype for defining formatter configurations on
 		-- any filetype
 		["*"] = {

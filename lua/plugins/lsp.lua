@@ -24,6 +24,15 @@ require("mason-lspconfig").setup_handlers({
 	["rust_analyzer"] = function()
 		-- require("rust-tools").setup({})
 	end,
+	["clangd"] = function()
+		require("lspconfig").clangd.setup({
+			on_attach = function()
+				require("clangd_ext")
+				require("clangd_extensions.inlay_hints").setup_autocmd()
+				require("clangd_extensions.inlay_hints").set_inlay_hints()
+			end,
+		})
+	end,
 })
 
 -- Global mappings.
